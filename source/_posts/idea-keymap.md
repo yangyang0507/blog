@@ -1,3 +1,4 @@
+---
 title: IDEA快捷键整理
 date: 2016-01-14 16:36:44
 categories:
@@ -11,7 +12,7 @@ IntelliJ IDEA是JetBrains公司开发的一款IDE工具，是公认的最好的J
 
 <!--more-->
 
-----------
+---
 
 Mac修饰键符号说明：
 
@@ -22,7 +23,7 @@ Mac修饰键符号说明：
 |⌃|表示control键|
 |⇧|表示shift键|
 |↩︎|表示enter键|
-|⌫|表示delete键|  
+|⌫|表示delete键|
 |⇥|表示tab键|
 |⇪|表示caps lock键|
 |Space|表示空格键|
