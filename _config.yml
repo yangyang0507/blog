@@ -83,7 +83,7 @@ deploy:
 backup:
     type: git
     repository:
-       conding: https://git.coding.net/yangyang0507/blog.git,master
+       origin: https://git.coding.net/yangyang0507/blog.git,master
 
 # LocalSearch
 search:
