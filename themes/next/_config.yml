@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "D.Yang‘s Blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -156,7 +156,6 @@ toc:
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
 creative_commons: by-nc-sa
 
 
@@ -269,7 +268,7 @@ duoshuo_shortname: dyang520
 google_analytics: UA-85419045-1
 
 # CNZZ count
-cnzz_siteid: 1259144414
+#cnzz_siteid:
 
 
 # Make duoshuo show UA
