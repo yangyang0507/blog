@@ -1,5 +1,6 @@
-title: 关于
+title: 关于我
 date: 2015-12-08 23:02:30
+type: "about"
 comments: false
 ---
 <blockquote class="blockquote-center">Art is long, but life is short</blockquote>
