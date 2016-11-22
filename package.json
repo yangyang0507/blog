@@ -1,9 +1,12 @@
 {
-  "name": "hexo-site",
+  "name": "D.Yang's Blog",
   "version": "0.0.0",
   "private": true,
   "hexo": {
     "version": "3.2.2"
+  },
+  "scripts": {
+    "deploy": "hexo deploy"
   },
   "dependencies": {
     "hexo": "^3.2.0",
@@ -14,7 +17,6 @@
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-search": "^1.0.2",
     "hexo-generator-tag": "^0.2.0",
-    "hexo-git-backup": "^0.1.2",
     "hexo-renderer-ejs": "^0.2.0",
     "hexo-renderer-marked": "^0.2.10",
     "hexo-renderer-stylus": "^0.3.1",

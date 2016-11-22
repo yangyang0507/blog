@@ -78,13 +78,6 @@ deploy:
     github: https://github.com/yangyang0507/yangyang0507.github.io.git,master
     coding: https://git.coding.net/yangyang0507/yangyang0507.git,master
 
-# Buckup(use hexo-git-backup)
-## URL: https://github.com/coneycode/hexo-git-backup
-backup:
-    type: git
-    repository:
-       origin: https://github.com/yangyang0507/blog.git,master
-
 # LocalSearch
 search:
   path: search.xml
