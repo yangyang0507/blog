@@ -1,36 +1,36 @@
 ---
 title: IDEA快捷键整理
-date: 2016-01-14 16:36:44
+date: 2016-01-14T16:36:44.000Z
 categories:
-- JetBrains系列IDE技巧
+  - JetBrains系列IDE技巧
 tags:
-- JetBrains
-- IDEA
+  - JetBrains
+  - IDEA
 ---
 
 IntelliJ IDEA是JetBrains公司开发的一款IDE工具，是公认的最好的Java开发工具之一，使用IDEA能有效提高开发效率，熟悉一些常用的快捷键会给开发带来很多便捷。以下为IDEA快捷键整理（Mac版本）：
 
-<!--more-->
+<!-- more -->
 
----
+--------------------------------------------------------------------------------
 
 Mac修饰键符号说明：
 
-|修饰键符号|相关键位|
-|------|------|
-|⌘|表示command键|
-|⌥|表示option键|
-|⌃|表示control键|
-|⇧|表示shift键|
-|↩︎|表示enter键|
-|⌫|表示delete键|
-|⇥|表示tab键|
-|⇪|表示caps lock键|
-|Space|表示空格键|
+修饰键符号 | 相关键位
+----- | ------------
+⌘     | 表示command键
+⌥     | 表示option键
+⌃     | 表示control键
+⇧     | 表示shift键
+↩︎    | 表示enter键
+⌫     | 表示delete键
+⇥     | 表示tab键
+⇪     | 表示caps lock键
+Space | 表示空格键
 
-----------
+--------------------------------------------------------------------------------
 
-## 编辑相关快捷键（Editing）
+# 编辑相关快捷键（Editing）
 
 - ⌃ + Space（由于和输入法冲突，我改为了⇧ + Space）：基本语法提示
 - ⌃ + ⇧ + Space：智能语法提示
@@ -40,7 +40,7 @@ Mac修饰键符号说明：
 - ⌘ + N：快速生成代码(Getters，Setters，Constructors，hashCode/equals，toString)
 - ⌃ + O：重写方法(Override)
 - ⌃ + I：实现方法(Implement)
-- ⌘ + ⌥ + T：在代码周围添加代码(if..else, try..catch, for, synchronized, ……)，比如一段代码需要捕捉异常，选中这段代码，按下此快捷键，可以快速在其周围添加诸如try..catch等代码
+- ⌘ + ⌥ + T：在代码周围添加代码(if..else, try..catch, for, synchronized, ......)，比如一段代码需要捕捉异常，选中这段代码，按下此快捷键，可以快速在其周围添加诸如try..catch等代码
 - ⌘ + /：快捷单行注释
 - ⌘ + ⌥ + /：快捷块注释(多行注释)
 - ⌥ + ↑ 和 ⌥ + ↓：快速选择代码块，不好描述，自行测试，挺有用。
@@ -48,4 +48,4 @@ Mac修饰键符号说明：
 - ⌘ + ⌥ + L：代码格式化
 - ⌃ + ⌥ + O：自动分析import语句（删除多余的，补全缺少的）
 
-未完持续……
+未完持续......
