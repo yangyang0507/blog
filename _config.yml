@@ -75,8 +75,8 @@ theme: next
 deploy:
   type: git
   repo:
-    github: https://github.com/yangyang0507/yangyang0507.github.io.git,master
-    coding: https://git.coding.net/yangyang0507/yangyang0507.git,master
+    github: git@github.com:yangyang0507/yangyang0507.github.io.git,master
+    coding: git@git.coding.net:yangyang0507/yangyang0507.git,master
 
 # LocalSearch
 search:
