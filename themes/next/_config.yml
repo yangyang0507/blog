@@ -212,7 +212,7 @@ auto_excerpt:
 # Post meta display settings
 post_meta:
   created_at: true
-  updated_at: true
+  updated_at: false
   categories: true
 
 
@@ -242,7 +242,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night bright
 
 
 # ---------------------------------------------------------------
