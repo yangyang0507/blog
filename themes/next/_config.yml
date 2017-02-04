@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "D.Yang's Blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -16,6 +16,9 @@ rss:
 # Specify the date when the site was setup
 since: 2015
 
+# icon between year and author @Footer
+authoricon: heart
+
 # Footer `powered-by` and `theme-info` copyright
 copyright: true
 
@@ -24,6 +27,8 @@ copyright: true
 # Tips: Before you open this tag, remeber set up your URL in hexo _config.yml ( ex. url: http://yourdomain.com )
 canonical: true
 
+# Change headers hierarchy on site-subtitle (will be main site description) and on all post/pages titles for better SEO-optimization.
+seo: false
 
 # ---------------------------------------------------------------
 # Menu Settings
@@ -33,9 +38,9 @@ canonical: true
 menu:
   home: /
   categories: /categories
-  tags: /tags
-  archives: /archives
   about: /about
+  archives: /archives
+  tags: /tags
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
@@ -211,6 +216,7 @@ auto_excerpt:
 
 # Post meta display settings
 post_meta:
+  item_text: true
   created_at: true
   updated_at: false
   categories: true
@@ -270,6 +276,13 @@ duoshuo_shortname: dyang520
 
 # Hypercomments
 #hypercomments_id:
+
+# Gentie productKey
+#gentie_productKey:
+
+# Support for youyan comments system.
+# You can get your uid from http://www.uyan.cc
+#youyan_uid: your uid
 
 # Baidu Share
 # Available value:
@@ -403,6 +416,8 @@ use_motion: true
 # Fancybox
 fancybox: true
 
+# Canvas-nest
+canvas_nest: false
 
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
@@ -450,6 +465,10 @@ vendors:
   # https://www.algolia.com
   algolia_instant_js:
   algolia_instant_css:
+
+  # Internal version: 1.0.0
+  # https://github.com/hustcc/canvas-nest.js
+  canvas_nest:
 
 
 
