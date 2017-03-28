@@ -145,6 +145,8 @@ $code-font-family               = $font-family-monospace
 $code-font-size                 = 13px
 $code-font-size                 = unit(hexo-config('font.codes.size'), px) if hexo-config('font.codes.size') is a 'unit'
 $code-border-radius             = 3px
+$code-foreground                = $black-light
+$code-background                = $gainsboro
 
 
 
@@ -237,6 +239,16 @@ $menu-link-hover-border         = $black-deep
 // Posts Expand
 // --------------------------------------------------
 $posts-expand-title-font-weight = $font-weight-normal
+$post-copyright = {
+  margin: 2em 0 0,
+  padding: .5em 1em,
+  bg: #f9f9f9,
+  border: {
+    width: 3px,
+    style: solid,
+    color: #ff1700
+  }
+}
 
 
 // Posts Collpase
