@@ -42,7 +42,7 @@ menu:
   about: /about
   archives: /archives
   tags: /tags
-  #sitemap: /sitemap.xml
+  sitemap: /sitemap.xml
   #commonweal: /404.html
 
 
@@ -296,8 +296,8 @@ baidu_analytics: f37a8b8ac624bc29f64349b003542379
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: yangyang0507
   count: true
 
 # Hypercomments
@@ -358,9 +358,9 @@ google_analytics: UA-85419045-1
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
   ua_enable: true
-  admin_enable: true
-  user_id: 6227331242455466754
-  admin_nickname: D.Yang
+  admin_enable: false
+  user_id: 0
+  #admin_nickname: Author
 
 
 # Facebook SDK Support.
@@ -479,9 +479,6 @@ fancybox: true
 # Canvas-nest
 canvas_nest: false
 
-#three_waves
-three_waves: false
-
 # Script Vendors.
 # Set a CDN address for the vendor you want to customize.
 # For example
@@ -532,10 +529,6 @@ vendors:
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
   canvas_nest:
-
-  #three
-  three:
-  three_waves:
 
 
 
