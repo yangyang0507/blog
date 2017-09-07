@@ -77,6 +77,7 @@ deploy:
   repo:
     github: git@github.com:yangyang0507/yangyang0507.github.io.git,master
     coding: git@git.coding.net:yangyang0507/yangyang0507.git,master
+    gitee: git@gitee.com:devyang/devyang.git,master
 
 # LocalSearch
 search:
