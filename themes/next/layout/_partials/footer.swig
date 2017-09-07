@@ -19,4 +19,8 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
+
+<div class="hosted-by">
+  <p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
+</div>
 {% endif %}
