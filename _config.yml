@@ -75,9 +75,7 @@ theme: next
 deploy:
   type: git
   repo:
-    github: git@github.com:yangyang0507/yangyang0507.github.io.git,master
-    coding: git@git.coding.net:yangyang0507/yangyang0507.git,master
-    gitee: git@gitee.com:devyang/devyang.git,master
+    github: git@github.com:yangyang0507/next-sidebar-bug.git,master
 
 # LocalSearch
 search:
@@ -125,6 +123,10 @@ theme_config:
     badges: true
 
   scheme: Pisces
+  
+  sidebar:
+    b2t: true
+    scrollpercent: true
 
   social:
     GitHub: https://github.com/yangyang0507 || github
