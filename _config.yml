@@ -105,9 +105,13 @@ theme_config:
 
   footer:
     since: 2015
-    icon: heart
+    icon: 
+      name: heart
+      color: "#808080"
     copyright: D.Yang
-    powered: true
+    powered:
+      enable: true
+      version: false
     theme:
       enable: true
       version: false
