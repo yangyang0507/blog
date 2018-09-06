@@ -75,9 +75,9 @@ theme: next
 deploy:
   type: git
   repo:
-    github: https://yangyang0507:CI_TOKEN@github.com/yangyang0507/yangyang0507.github.io.git,master
-    coding: https://yangyang0507:CI_TOKEN_CODING@git.coding.net/yangyang0507/yangyang0507.git,master
-    gitee: https://devyang:CI_TOKEN_GITEE@gitee.com/devyang/devyang.git,master
+    github: https://yangyang0507:GITHUB_TOKEN@github.com/yangyang0507/yangyang0507.github.io.git,master
+    coding: https://yangyang0507:CODING_TOKEN@git.coding.net/yangyang0507/yangyang0507.git,master
+    gitee: https://devyang:GITEE_TOKEN@gitee.com/devyang/devyang.git,master
 
 # LocalSearch
 search:
