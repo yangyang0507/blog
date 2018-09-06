@@ -13,7 +13,7 @@ before_install:
   - export TZ=Asia/Shanghai
 
 script:
-  - git clone -b master git@github.com:yangyang0507/yangyang0507.github.io.git ./.deploy_git
+  - git clone -b master https://github.com/yangyang0507/yangyang0507.github.io.git ./.deploy_git
 
 after_success:
   - git config --global user.name "D.Yang"
