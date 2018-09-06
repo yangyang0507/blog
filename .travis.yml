@@ -5,10 +5,6 @@ sudo: false
 node_js:
   - "8"
 
-cache:
-  directories:
-    - node_modules
-
 branches:
   only:
     - master
@@ -20,14 +16,10 @@ script:
   - npm run build
 
 after_success:
-  # Set Git config
   - git config --global user.name "D.Yang"
   - git config --global user.email koyangslash@gmail.com
-  # Clone the repository
   - git clone -b master git@github.com:yangyang0507/yangyang0507.github.io.git ./.deploy_git
-  # Replace token
   - sed -i "s/GITHUB_TOKEN/${CI_TOKEN}/g" ./_config.yml
   - sed -i "s/CODING_TOKEN/${CI_TOKEN_CODING}/g" ./_config.yml
   - sed -i "s/GITEE_TOKEN/${CI_TOKEN_GITEE}/g" ./_config.yml
-  # Deploy to GitHub
   - npm run deploy
