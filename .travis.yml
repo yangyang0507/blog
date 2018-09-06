@@ -13,12 +13,11 @@ before_install:
   - export TZ=Asia/Shanghai
 
 script:
-  - npm run build
+  - git clone -b master git@github.com:yangyang0507/yangyang0507.github.io.git ./.deploy_git
 
 after_success:
   - git config --global user.name "D.Yang"
   - git config --global user.email koyangslash@gmail.com
-  - git clone -b master git@github.com:yangyang0507/yangyang0507.github.io.git ./.deploy_git
   - sed -i "s/GITHUB_TOKEN/${CI_TOKEN}/g" ./_config.yml
   - sed -i "s/CODING_TOKEN/${CI_TOKEN_CODING}/g" ./_config.yml
   - sed -i "s/GITEE_TOKEN/${CI_TOKEN_GITEE}/g" ./_config.yml
