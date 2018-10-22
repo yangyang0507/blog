@@ -144,10 +144,10 @@ theme_config:
   github_banner: https://github.com/yangyang0507 || Follow me on GitHub
 
   avatar: 
-    url: http://7xp4vx.com1.z0.glb.clouddn.com/avatar.jpg
+    url: avatar.jpg
     rounded: false
     opacity: 1
-    rotated: false
+    rotated: true
     
   creative_commons: by-nc-sa
 
