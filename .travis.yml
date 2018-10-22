@@ -5,6 +5,11 @@ sudo: false
 node_js:
   - "8"
 
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
 branches:
   only:
     - master
@@ -21,4 +26,4 @@ after_success:
   - sed -i "s/GITHUB_TOKEN/${CI_TOKEN}/g" ./_config.yml
   - sed -i "s/CODING_TOKEN/${CI_TOKEN_CODING}/g" ./_config.yml
   - sed -i "s/GITEE_TOKEN/${CI_TOKEN_GITEE}/g" ./_config.yml
-  - npm run deploy
+  - yarn run deploy
