@@ -141,13 +141,16 @@ theme_config:
     transition: true
     exturl: false
 
-  github_banner: https://github.com/yangyang0507 || Follow me on GitHub
+  github_banner:
+    enable: true
+    permalink: https://github.com/yangyang0507
+    title: Follow me on GitHub
 
   avatar: 
     url: avatar.jpg
     rounded: false
     opacity: 1
-    rotated: true
+    rotated: false
     
   creative_commons: by-nc-sa
 
