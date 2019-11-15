@@ -1,0 +1,97 @@
+override: false
+
+custom_file_path:
+  footer: source/_data/footer.swig
+
+favicon:
+  small: /favicon.ico
+  medium: /favicon.ico
+  apple_touch_icon: /favicon.ico
+  safari_pinned_tab: /favicon.ico
+
+footer:
+  since: 2015
+  icon: 
+    name: heart
+    animated: true
+    color: "#FF6347"
+  copyright: D.Yang
+  powered:
+    enable: true
+    version: false
+  theme:
+    enable: true
+    version: false
+
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language: deed.zh
+
+scheme: Pisces
+
+menu:
+  home: / || home
+  about: /about/ || user
+  tags: /tags/ || tags
+  categories: /categories/ || th
+  archives: /archives/ || archive
+
+menu_settings:
+  icons: true
+  badges: true
+
+avatar: 
+  url: avatar.jpg
+  rounded: false
+  rotated: false
+
+social:
+  GitHub: https://github.com/yangyang0507 || github
+  Weibo: http://weibo.com/dyang520 || weibo
+  Twitter: https://twitter.com/yangyang0507 || twitter
+
+social_icons:
+  enable: true
+  icons_only: true
+  transition: true
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: false
+
+github_banner:
+  enable: true
+  permalink: https://github.com/yangyang0507
+  title: Follow me on GitHub
+
+seo: true
+
+baidu_push: true
+
+livere_uid: MTAyMC8zMTY1Mi84MjE2
+
+google_analytics:
+  tracking_id: UA-85419045-1
+  localhost_ignored: true
+  only_pageview: false
+
+baidu_analytics: f37a8b8ac624bc29f64349b003542379
+
+busuanzi_count:
+  enable: true
+  total_visitors: false
+  total_visitors_icon: user
+  total_views: false
+  total_views_icon: eye
+  post_views: true
+  post_views_icon: eye
+
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false
