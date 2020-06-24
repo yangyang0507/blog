@@ -1,34 +1,20 @@
 // Header
 // --------------------------------------------------
-.header {
-  background: $whitesmoke;
-}
-
 .header-inner {
-  clearfix();
   align-items: center;
   display: flex;
-  justify-content: center;
   padding: 20px 0;
 
   +mobile() {
     display: block;
-    padding: 10px;
-    width: auto;
+    padding: 10px 0;
   }
 }
 
 .site-meta {
-  float: left;
   line-height: normal;
-  margin-left: -20px;
-
-  +mobile() {
-    margin-left: 10px;
-  }
 
   .brand {
-    background: none;
     padding: 2px 1px;
 
     +mobile() {
@@ -42,34 +28,26 @@
 }
 
 .logo-line-before, .logo-line-after {
+  background: var(--brand-color);
   display: block;
+  height: 2px;
   margin: 0 auto;
-  overflow: hidden;
   width: 75%;
 
   +mobile() {
     display: none;
   }
-
-  i {
-    background: $black-deep;
-    display: block;
-    height: 2px;
-    position: relative;
-
-    +mobile() {
-      height: 3px;
-    }
-  }
 }
 
 .use-motion {
-  .logo-line-before i {
-    left: -100%;
+  .logo-line-before {
+    transform-origin: left;
+    transform: scaleX(0);
   }
 
-  .logo-line-after i {
-    right: -100%;
+  .logo-line-after {
+    transform-origin: right;
+    transform: scaleX(0);
   }
 }
 

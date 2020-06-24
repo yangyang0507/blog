@@ -42,12 +42,11 @@
       &::before {
         animation: dot-flash 1s alternate infinite ease-in-out;
         color: white;
-        content: '\f111';
         display: inline-block;
-        font-family: $font-family-icons;
         font-size: 10px;
         margin-right: 25px;
         vertical-align: middle;
+        font-family-icons('\f111');
       }
     }
 
@@ -55,7 +54,7 @@
       color: $grey;
       display: inline-block;
       font-size: 12px;
-      font-weight: $font-weight-normal;
+      font-weight: normal;
       padding-left: 12px;
     }
 
@@ -71,11 +70,11 @@
       &::before {
         color: white;
         display: inline-block;
-        font-family: $font-family-icons;
         margin-right: 9px;
         text-align: center;
         text-indent: 0;
         width: 14px;
+        font-family-icons();
       }
 
       &.event-location::before {

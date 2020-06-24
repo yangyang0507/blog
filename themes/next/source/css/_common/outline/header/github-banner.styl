@@ -13,7 +13,6 @@
 }
 
 .github-corner {
-  $scheme = hexo-config('scheme');
   $bg-color = unquote(hexo-config('android_chrome_color'));
 
   :hover .octo-arm {
@@ -21,7 +20,6 @@
   }
 
   svg {
-    border: 0;
     color: white;
     fill: $bg-color;
     position: absolute;
@@ -31,6 +29,10 @@
   }
 
   +tablet-mobile() {
+    if (hexo-config('local_search.enable') || hexo-config('algolia_search.enable')) {
+      display: none;
+    }
+
     svg {
       if (($scheme == 'Pisces') || ($scheme == 'Gemini')) {
         color: $bg-color;

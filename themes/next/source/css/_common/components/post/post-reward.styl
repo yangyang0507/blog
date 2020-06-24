@@ -5,34 +5,27 @@
   width: 90%;
 
   button {
-    background: $red;
-    border: 0;
-    border-radius: 5px;
-    color: white;
+    background: transparent;
+    border: 2px solid $sidebar-highlight;
+    border-radius: 2px;
+    color: $sidebar-highlight;
     cursor: pointer;
-    display: inline-block;
-    letter-spacing: normal;
     line-height: 2;
-    margin: 0;
     outline: 0;
     padding: 0 15px;
-    text-indent: 0;
-    text-shadow: none;
-    text-transform: none;
+    transition: all $transition-ease;
     vertical-align: text-top;
 
     &:hover {
-      background: lighten($red, 20%);
+      background: $sidebar-highlight;
+      border: 2px solid transparent;
+      color: white;
     }
   }
 }
 
 #qr {
   padding-top: 20px;
-
-  a {
-    border: 0;
-  }
 
   img {
     display: inline-block;
@@ -41,12 +34,8 @@
     width: 180px;
   }
 
-  p {
-    text-align: center;
-  }
-
   if (hexo-config('reward_settings.animation')) {
-    > div:hover p {
+    div:hover p {
       animation: roll .1s infinite linear;
     }
 

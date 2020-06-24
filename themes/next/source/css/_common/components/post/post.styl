@@ -1,12 +1,12 @@
 .post-body {
-  word-wrap();
   font-family: $font-family-posts;
+  word-wrap();
 
   +desktop-large() {
     font-size: $font-size-large;
   }
 
-  span.exturl .fa {
+  .exturl .fa {
     font-size: $font-size-small;
     margin-left: 4px;
   }
@@ -69,3 +69,5 @@
 @import 'post-reward';
 
 @import 'post-copyright' if (hexo-config('creative_commons.post'));
+
+@import 'post-followme' if (hexo-config('follow_me'));

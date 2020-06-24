@@ -1,9 +1,5 @@
 // Tags
 // --------------------------------------------------
-a {
-  border-bottom-color: $grey-light;
-}
-
 hr {
   height: 2px;
   margin: 20px 0;
@@ -12,8 +8,6 @@ hr {
 // Components
 // --------------------------------------------------
 .btn {
-  border-radius: 0;
-  border-width: 2px;
   padding: 0 10px;
 }
 
@@ -25,20 +19,19 @@ hr {
 // --------------------------------------------------
 .main-inner {
   padding-bottom: 80px;
-
-  +mobile() {
-    width: auto;
-  }
 }
 
 .content {
   padding-top: 80px;
+
+  +mobile() {
+    padding-top: 60px;
+  }
 }
 
 // Pagination
 // --------------------------------------------------
 .pagination {
-  margin: 120px 0 0;
   text-align: left;
 
   +mobile() {
@@ -50,8 +43,8 @@ hr {
 // Footer
 // --------------------------------------------------
 .footer {
-  background: $whitesmoke;
-  color: $grey-dim;
+  background: var(--content-bg-color);
+  color: var(--text-color);
   padding: 10px 0;
 }
 
@@ -60,6 +53,5 @@ hr {
 
   +mobile() {
     text-align: center;
-    width: auto;
   }
 }

@@ -12,16 +12,11 @@ favicon:
 footer:
   since: 2015
   icon: 
-    name: heart
+    name: fa fa-heart
     animated: true
     color: "#FF6347"
   copyright: D.Yang
-  powered:
-    enable: true
-    version: false
-  theme:
-    enable: true
-    version: false
+  powered: true
 
 creative_commons:
   license: by-nc-sa
@@ -32,11 +27,11 @@ creative_commons:
 scheme: Pisces
 
 menu:
-  home: / || home
-  about: /about/ || user
-  tags: /tags/ || tags
-  categories: /categories/ || th
-  archives: /archives/ || archive
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
 
 menu_settings:
   icons: true
@@ -66,8 +61,6 @@ github_banner:
   enable: true
   permalink: https://github.com/yangyang0507
   title: Follow me on GitHub
-
-seo: true
 
 baidu_push: true
 

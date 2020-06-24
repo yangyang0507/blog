@@ -1,25 +1,30 @@
-.custom-logo {
-  .site-meta-headline {
-    text-align: center;
-  }
+.custom-logo-image {
+  background: white;
+  margin: 0 auto 10px;
+  max-width: 150px;
+  padding: 5px;
+}
 
-  .brand {
-    background: none;
-  }
+.brand {
+  background: var(--btn-default-bg);
+}
 
-  .site-title {
-    color: $black-deep;
-    margin: 10px auto 0;
+.header-inner {
+  padding-top: 100px;
 
-    a {
-      border: 0;
-    }
+  +mobile() {
+    padding-top: 50px;
   }
 }
 
-.custom-logo-image {
-  background: white;
-  margin: 0 auto;
-  max-width: 150px;
-  padding: 5px;
+.main-inner {
+  padding-bottom: 60px;
+}
+
+.content {
+  padding-top: 70px;
+
+  +mobile() {
+    padding-top: 35px;
+  }
 }
