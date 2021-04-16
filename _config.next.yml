@@ -1,0 +1,129 @@
+override: false
+
+# Scheme Settings
+
+scheme: Pisces
+
+darkmode: true
+
+# Site Information Settings
+
+favicon:
+  small: /favicon.ico
+  medium: /favicon.ico
+  apple_touch_icon: /favicon.ico
+  safari_pinned_tab: /favicon.ico
+
+creative_commons:
+  license: by-nc-sa
+  sidebar: true
+  post: true
+  language: deed.zh
+
+# Menu Settings
+
+menu:
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+
+menu_settings:
+  icons: true
+  badges: true
+
+# Sidebar Settings
+
+avatar: 
+  url: avatar.jpg
+  rounded: false
+  rotated: false
+
+social:
+  GitHub: https://github.com/yangyang0507 || github
+  Weibo: http://weibo.com/dyang520 || weibo
+  Twitter: https://twitter.com/yangyang0507 || twitter
+
+social_icons:
+  enable: true
+  icons_only: true
+  transition: true
+
+# Footer Settings
+
+footer:
+  since: 2015
+  icon: 
+    name: fa fa-heart
+    animated: true
+    color: "#FF6347"
+  copyright: D.Yang
+  powered: true
+
+# Theme Settings
+
+preconnect: true
+
+codeblock:
+  theme:
+    light: atom-one-dark-reasonable
+    dark: atom-one-dark-reasonable
+  prism:
+    light: prism-xonokai
+    dark: prism-xonokai
+  copy_button:
+    enable: true
+    style: mac
+
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: false
+
+reading_progress:
+  enable: true
+  startAt: left
+  position: top
+  reversed: false
+  color: "#37c6c0"
+  height: 3px
+
+github_banner:
+  enable: true
+  permalink: https://github.com/yangyang0507
+  title: Follow me on GitHub
+
+# Third Party Plugins & Services Settings
+
+lazyload: true
+
+# Comments Settings
+
+livere_uid: MTAyMC8zMTY1Mi84MjE2
+
+# Statistics and Analytics
+
+google_analytics:
+  tracking_id: UA-85419045-1
+  only_pageview: false
+
+baidu_analytics: f37a8b8ac624bc29f64349b003542379
+
+busuanzi_count:
+  enable: true
+  total_visitors: false
+  total_visitors_icon: user
+  total_views: false
+  total_views_icon: eye
+  post_views: true
+  post_views_icon: eye
+
+# Search Services
+
+local_search:
+  enable: true
+  trigger: auto
+  top_n_per_article: 1
+  unescape: false
+  preload: false

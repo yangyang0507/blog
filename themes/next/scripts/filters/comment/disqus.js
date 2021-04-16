@@ -7,14 +7,12 @@ const { iconText } = require('./common');
 
 // Add comment
 hexo.extend.filter.register('theme_inject', injects => {
-  let theme = hexo.theme.config;
-  if (!theme.disqus.enable || !theme.disqus.shortname) return;
+  const config = hexo.theme.config.disqus;
+  if (!config.enable || !config.shortname) return;
 
   injects.comment.raw('disqus', `
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
+  <div class="comments" id="disqus_thread">
+    <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
   </div>
   `, {}, {cache: true});
 
@@ -24,8 +22,8 @@ hexo.extend.filter.register('theme_inject', injects => {
 
 // Add post_meta
 hexo.extend.filter.register('theme_inject', injects => {
-  let theme = hexo.theme.config;
-  if (!theme.disqus.enable || !theme.disqus.shortname || !theme.disqus.count) return;
+  const config = hexo.theme.config.disqus;
+  if (!config.enable || !config.shortname || !config.count) return;
 
   injects.postMeta.raw('disqus', `
   {% if post.comments %}
@@ -36,6 +34,6 @@ hexo.extend.filter.register('theme_inject', injects => {
     </a>
   </span>
   {% endif %}
-  `, {}, {}, theme.disqus.post_meta_order);
+  `, {}, {});
 
 });

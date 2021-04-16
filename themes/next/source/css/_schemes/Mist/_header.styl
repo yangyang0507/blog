@@ -27,7 +27,7 @@
   }
 }
 
-.logo-line-before, .logo-line-after {
+.logo-line {
   background: var(--brand-color);
   display: block;
   height: 2px;
@@ -40,14 +40,14 @@
 }
 
 .use-motion {
-  .logo-line-before {
-    transform-origin: left;
+  .logo-line:first-of-type {
     transform: scaleX(0);
+    transform-origin: left;
   }
 
-  .logo-line-after {
-    transform-origin: right;
+  .logo-line:last-of-type {
     transform: scaleX(0);
+    transform-origin: right;
   }
 }
 

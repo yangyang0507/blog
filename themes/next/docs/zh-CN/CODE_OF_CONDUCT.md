@@ -5,7 +5,9 @@
   <a title="俄语" href="../ru/CODE_OF_CONDUCT.md">:ru:</a>
 </div>
 
-# <div align="center"><a title="Go to homepage" href="https://theme-next.js.org"><img align="center" width="56" height="56" src="https://raw.githubusercontent.com/next-theme/hexo-theme-next/master/source/images/logo.svg?sanitize=true"></a> e x T</div>
+<a title="NexT website" href="https://theme-next.js.org"><img align="right" alt="NexT logo" width="100" height="100" src="https://raw.githubusercontent.com/next-theme/hexo-theme-next/master/source/images/logo.svg"></a>
+
+# NexT
 
 [NexT](https://theme-next.js.org) 是一个优雅而强大的 [Hexo](https://hexo.io/)主题。在这里，您可以构建一个托管在 [GitHub Pages](https://pages.github.com/) 上的静态博客，分享您的生活，并与新朋友进行交流。
 
@@ -80,10 +82,10 @@
 
 ## 联系项目维护者
 
-您可以通过以下任何方法与维护人员联系
+您可以通过以下方式与维护人员联系：
 
-* 电子邮件:
-    * [support@theme-next.org](mailto:support@theme-next.org)
+* 讨论:
+    * [GitHub Discussions](https://github.com/next-theme/hexo-theme-next/discussions)
 
 * 即时通信:
     * [Gitter](https://gitter.im/hexo-next)

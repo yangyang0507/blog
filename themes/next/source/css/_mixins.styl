@@ -70,12 +70,10 @@ disable-user-select() {
 sidebar-inline-links-item() {
   margin: 5px 0 0;
 
-  a, span.exturl {
+  a {
     box-sizing: border-box;
     display: inline-block;
-    margin-bottom: 0;
-    margin-right: 0;
-    max-width: 216px;
+    max-width: 100%;
     overflow: hidden;
     padding: 0 5px;
     text-overflow: ellipsis;
@@ -83,10 +81,22 @@ sidebar-inline-links-item() {
   }
 }
 
+flex-wrap() {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 flex-column() {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+post-card() {
+  background: var(--card-bg-color);
+  border-left: 3px solid $red;
+  margin: $post-card-margin;
 }
 
 font-family-icons($icon = '') {
@@ -98,21 +108,22 @@ font-family-icons($icon = '') {
 }
 
 main-container() {
-  margin: 0 auto;
-  width: $content-desktop;
+  --width: $content-desktop;
+  margin: 0 calc((100vw - var(--width)) / 2);
+  width: var(--width);
 
   +desktop-large() {
-    width: $content-desktop-large;
+    --width: $content-desktop-large;
   }
 
   +desktop-largest() {
-    width: $content-desktop-largest;
+    --width: $content-desktop-largest;
   }
 }
 
 sidebar-toggle-position($reverse = false) {
   $condition = hexo-config('sidebar.position') == 'right';
-  if (($scheme == 'Muse') || ($scheme == 'Mist')) {
+  if (($scheme == 'Muse') or ($scheme == 'Mist')) {
     $condition = $condition == $reverse;
   }
   if ($condition) {
@@ -142,5 +153,85 @@ sidebar-toggle() {
 
   +tablet-mobile() {
     opacity: $b2t-opacity-hover;
+  }
+}
+
+round-icon($diameter) {
+  border-radius: 50%;
+  content: ' ';
+  height: $diameter;
+  width: $diameter;
+}
+
+toggle-arrow($position) {
+  if ($position == 'right') {
+    .toggle-line:first-child {
+      top: 2px;
+      transform: rotate(-45deg);
+      width: 50%;
+    }
+
+    .toggle-line:last-child {
+      top: -2px;
+      transform: rotate(45deg);
+      width: 50%;
+    }
+  } else {
+    .toggle-line:first-child {
+      left: 50%;
+      top: 2px;
+      transform: rotate(45deg);
+      width: 50%;
+    }
+
+    .toggle-line:last-child {
+      left: 50%;
+      top: -2px;
+      transform: rotate(-45deg);
+      width: 50%;
+    }
+  }
+}
+
+toggle-close($position) {
+  .toggle-line:nth-child(2) {
+    opacity: 0;
+  }
+
+  if ($position == 'right') {
+    .toggle-line:first-child {
+      top: 5px;
+      transform: rotate(-45deg);
+    }
+
+    .toggle-line:last-child {
+      top: -5px;
+      transform: rotate(45deg);
+    }
+  } else {
+    .toggle-line:first-child {
+      top: 5px;
+      transform: rotate(45deg);
+    }
+
+    .toggle-line:last-child {
+      top: -5px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+site-nav-hide-by-default() {
+  --scroll-height: 0;
+  height: 0;
+  overflow: hidden;
+  transition: height $transition-ease;
+
+  body:not(.site-nav-on) & .animated {
+    animation: none;
+  }
+
+  body.site-nav-on & {
+    height: var(--scroll-height);
   }
 }

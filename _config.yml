@@ -6,6 +6,7 @@
 title: D.Yang's Blog
 subtitle: To Be A Great Coder
 description: Art is long, but life is short!
+keywords: blog
 author: D.Yang
 language: zh-CN
 timezone: Asia/Chongqing
@@ -18,6 +19,7 @@ permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing index.html from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
 # Directory
 source_dir: source
@@ -45,7 +47,14 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: false
+  auto_detect: true
+  tab_replace: ''
+  wrap: true
+  hljs: true
+prismjs:
+  enable: false
+  preprocess: true
+  line_number: true
   tab_replace: ''
 
 # Home page setting
@@ -72,8 +81,8 @@ meta_generator: true
 ## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## Use post's date for updated date unless set in front-matter
-use_date_for_updated: false
+## updated_option supports 'mtime', 'date', 'empty'
+updated_option: 'date'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
@@ -113,8 +122,8 @@ archive_generator:
 search:
   path: search.xml
   field: post
+  content: true
   format: html
-  limit: 10000
 
 # SiteMap
 sitemap:
