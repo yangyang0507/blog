@@ -106,17 +106,19 @@ deploy:
   type: git
   repo:
     github: 
-      url: https://yangyang0507@github.com/yangyang0507/yangyang0507.github.io.git
+      url: https://github.com/yangyang0507/yangyang0507.github.io.git
       branch: master
-      token: GITHUB_TOKEN
+      token: $GITHUB_TOKEN
     coding: 
-      url: https://yangyang0507@git.coding.net/yangyang0507/yangyang0507.git
+      url: https://git.coding.net/yangyang0507/yangyang0507.git
       branch: master
-      token: CODING_TOKEN
+      token: $CODING_TOKEN
     gitee: 
-      url: https://devyang@gitee.com/devyang/devyang.git
+      url: https://gitee.com/devyang/devyang.git
       branch: master
-      token: GITEE_TOKEN
+      token: $GITEE_TOKEN
+  name: D.Yang
+  email: koyangslash@gmail.com
 
 # Archive
 archive_generator:
