@@ -108,15 +108,15 @@ deploy:
     github: 
       url: https://github.com/yangyang0507/yangyang0507.github.io.git
       branch: master
-      token: $GITHUB_TOKEN
+      token: $CI_TOKEN
     coding: 
       url: https://git.coding.net/yangyang0507/yangyang0507.git
       branch: master
-      token: $CODING_TOKEN
+      token: $CI_TOKEN_CODING
     gitee: 
       url: https://gitee.com/devyang/devyang.git
       branch: master
-      token: $GITEE_TOKEN
+      token: $CI_TOKEN_GITEE
   name: D.Yang
   email: koyangslash@gmail.com
 
